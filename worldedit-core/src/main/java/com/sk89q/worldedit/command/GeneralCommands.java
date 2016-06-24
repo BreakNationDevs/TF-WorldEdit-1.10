@@ -32,7 +32,7 @@ import com.sk89q.worldedit.entity.Player;
 import com.sk89q.worldedit.extension.platform.Actor;
 import com.sk89q.worldedit.function.mask.Mask;
 import com.sk89q.worldedit.util.command.parametric.Optional;
-import me.StevenLawson.worldedit.WorldEditHandler;
+import me.totalfreedom.worldedit.WorldEditHandler;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 /**
