@@ -75,18 +75,18 @@ artifactory {
 subprojects {
     apply plugin: 'java'
     apply plugin: 'maven'
-    apply plugin: 'checkstyle'
+    //apply plugin: 'checkstyle'
     apply plugin: 'com.github.johnrengelman.shadow'
     apply plugin: 'com.jfrog.artifactory'
 
     group = 'com.sk89q.worldedit'
-    version = '6.1.4-SNAPSHOT'
+    version = '6.1.4-TF'
     ext.internalVersion = version + ";" + gitCommitHash
 
     sourceCompatibility = 1.7
     targetCompatibility = 1.7
 
-    checkstyle.configFile = new File(rootProject.projectDir, "config/checkstyle/checkstyle.xml")
+    //checkstyle.configFile = new File(rootProject.projectDir, "config/checkstyle/checkstyle.xml")
 
     repositories {
         mavenCentral()
@@ -124,8 +124,8 @@ subprojects {
         build.dependsOn(sourcesJar)
     }
 
-    build.dependsOn(checkstyleMain)
-    build.dependsOn(checkstyleTest)
+    //build.dependsOn(checkstyleMain)
+    //build.dependsOn(checkstyleTest)
     build.dependsOn(javadocJar)
 
     shadowJar {
